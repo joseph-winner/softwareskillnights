@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Software Skill Nights Hackathon registration</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Software Skill Nights Hackathon registration" name="keywords">
+        <meta content="Software Skill Nights Hackathon registration" name="description">
+
+        <!-- FONT AWESOME 4.7 CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Favicon -->
+        <link href="/public/img/software.png" rel="icon">
+
+        <!-- Stylesheet -->
+        <link href="/public/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper login-3">
+            <div class="container">
+                <div class="col-left">
+                    <div class="login-text">
+                        <a href="" class="login-container-home">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <h2><img src="/public/img/logo.png" alt="Logo"></h2>
+                        <p>
+                            Thank you for considering our invitation. We genuinely hope to see you at the Hackathon and witness your exceptional skills in action.
+                        </p>
+                        <p>
+                            Should you have any questions or inquiries, please feel free to reach out to our team at <a href="tel:+97433144857"> +974 3314 4857</a> We are more than happy to assist you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="login-form">
+                        <h2>Software Skill Nights Hackathon registration</h2>
+                        <form action="/register" method="post">
+                            <p>
+                                <input type="text" name="name" placeholder="Name" required>
+                            </p>
+                            <p>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </p>
+                            <p>
+                                <input type="tel" name="phone" placeholder="Phone" required>
+                            </p>
+                            <p>
+                                <input type="text" name="techStack" placeholder="Technology Stack" required>
+                            </p>
+
+                            <h4>Team Formation</h4>
+                            <p>Are you registering as an individual or a team?</p>
+                            <p class="form-added">
+                                <input type="radio" id="individual" name="teamType" value="individual">
+                                <label for="individual">Individual</label>
+                            </p>
+                            <p class="form-added">
+                                <input type="radio" id="team" name="teamType" value="team">
+                                <label for="team">Team</label>
+                            </p>
+                            
+                            <br>
+                                <label for="teamName">Team Name (if registering as a team):</label>
+                                <input type="text" id="teamName" name="teamName">
+
+                            <p>
+                                I consent to the use of my participant data for event-related communication and future updates.
+                                <input type="checkbox" id="checkbox" name="consent">
+                            </p>
+                            <p>
+                                <input class="btn" type="submit" value="Register" />
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/public/js/reg.js"></script>
+    </body>
+</html>

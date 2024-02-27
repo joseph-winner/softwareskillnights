@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard for the attendance list of Users</title>
+    <!-- GOOGLE FONTS POPPINS FONT FAMILY CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME 4.7 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+        background-color: #01133f;
+        color: #fff;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #1a265f;
+    }
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4a5f8f;
+        color: #fff;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #6a7fbf;
+    }
+    div {
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+   <main>
+    <ul>
+        <% attendees.forEach((attendee, index) => { %>
+            <li>
+                <h2><%= attendee.name %></h2>
+                <p>Contact: <%= attendee.phone %></p>
+                <button id="button-<%= index %>" onclick="toggleDetails('details-<%= index %>', 'button-<%= index %>')">Show Details</button>
+                <div id="details-<%= index %>" style="display: none;">
+                    <p>Email: <%= attendee.email %></p>
+                    <p>Tech Stack: <%= attendee.techStack %></p>
+                </div>
+            </li>
+        <% }); %>
+    </ul>
+
+    <script>
+        function toggleDetails(detailsId, buttonId) {
+            const details = document.getElementById(detailsId);
+            const button = document.getElementById(buttonId);
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                button.textContent = 'Hide Details';
+            } else {
+                details.style.display = 'none';
+                button.textContent = 'Show Details';
+            }
+        }
+    </script>
+   </main> 
+</body>
+</html>

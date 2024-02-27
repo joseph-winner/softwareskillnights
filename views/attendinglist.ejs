@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/public/img/software.png">
+    <meta name="twitter:image" content="/public/img/software.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Software Skill Nights Hackathon Attendees</title>
+    <!-- GOOGLE FONTS POPPINS FONT FAMILY CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME 4.7 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+        .header-img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 280px;
+        }
+        .hackathon-details{
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .hackathon-attede-imgs img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .hackathon-attedde{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .hackathon-redir{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hackathon-event{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 70%;
+        }
+
+        .hackathon-feature{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            gap: 15px;
+            color: #555;
+        }
+        .hackathon-tagline{
+            color: #555;
+        }
+
+        .share-btn{
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            background-color: #01133f;
+            color: #fff;
+            width: 80px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .event-reg-link a{
+            text-decoration: none;
+            color: #555;
+        }
+        .hackathon-attede-no{
+            color: #555;
+        }
+
+        .attendance-home-btn{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .home-btn a{
+            text-decoration: none;
+            color: #01133f;
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            background-color: #01133f;
+            color: #fff;
+            width: 80px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        @media(max-width:767px){
+            .attendance-home-btn{
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .header-img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: right;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="hackathon-redir">
+        <div class="hackathon-event">
+            <img class="header-img" src="/public/img/Software skill nights Cover Image.png" alt="">
+            <div class="hackathon-details">
+                <div class="hackathon--detail">
+                    <h2>
+                        Developer, Aspiring Founders and Founders Hackathon
+                    </h2>
+                    <span class="hackathon-tagline">
+                        Event by Software Skill Nights
+                    </span>
+                    <p>
+                        <div class="hackathon-feature">
+                            <span class="date-time">
+                                <i class="fa fa-calendar"></i> Thurs, Feb, 29, 2024 | 04:00PM - 08:00PM
+                            </span>
+                            <span class="location">
+                                <i class="fa fa-map-marker"></i> Al Nasr Tower B 5th Floor Doha Qatar
+                            </span>
+                            <span class="event-reg-link">
+                                <i class="fa fa-link"></i> <a href="#">Hackathon Registration</a>
+                            </span>
+                        </div>
+                        <div class="hackathon-attedde">
+                            <div class="hackathon-attede-imgs">
+                                <img src="/public/img/software.png" alt="">
+                                <img src="/public/img/software.png" alt="">
+                                <img src="/public/img/software.png" alt="">
+                            </div>
+                            <p class="hackathon-attede-no"> <span id="attendee-total"><%= totalAttendees %></span> attendees</p>
+                        </div>
+                        <div class="attendance-home-btn">
+                            <p class="share-btn" onclick="shareCurrentPage()">
+                                Share <i class="fa fa-share-square-o"></i>
+                            </p>
+                            <p class="home-btn">
+                                <a href="">Go Home  <i class="fa fa-home"></i></a>
+                            </p>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        function shareCurrentPage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.title,
+                    url: window.location.href
+                }).catch(console.error);
+            } else {
+                alert('Web Share API is not supported in your browser.');
+            }
+        }
+    </script>
+</body>
+</html>

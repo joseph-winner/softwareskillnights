@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "softwareskillhackathon",
+  "private_key_id": "061936c1d504c9f81c373f9f47a30bdcef55f596",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFBtAF8iREqNhK\nXHHPu+fglbA2tGoLpaiyIiDjoyBYS7DEddBpN2pxyWjODYYk9y8ZKRrFam0mvacJ\npJ/3H1OCvfAhA7n683u4G9czNjU4UbZ9lFvHaKzBF4qHo9+BLI/TkZT+SgiuX/X2\n78Tf3jp6MGcUqoIs+pg60Jl910NglSLC4q6OVmHIImzbKxl3K93TN0vIHiLpOIdm\nVwfdD9hN46YsG8+f2TwxQ6VyPf6wlX8jTWgC6kBnBbxbb0DlpUJoKqySXfsCo0Da\nCHyLfsd58v9BkCa7VwYqM/Bi68zjwUQm6F0oWTCqy4PhfCwDdayevmWbg+CyH6CL\nd2DM1kXXAgMBAAECggEAEj1ONq6y4tRKqZ+jPZrknWreFEJhatCcLFlyeABa9zGS\nnK1XbNYfeYcut5yS5YsohgjDHLF8h1CZTRA7atIwlfLlbvj8V5oAwwt4wZnsFVmj\nLj70vCIZlAqM3X+zKi8o5Wodw+iwowvpJkIOFLdq7HLcqBIc2PMd8pvrCbZK237p\nPra1N5cdgRmYB6/bzaH6EzAIAhBNs+nnZ/ojbVmmz4Ql8xuXgNh4nGVCut2cHp2a\njrqfnh6A0M/0Tdkqjx0AeUYxVHLu4O+Ag6W1/ifqUtXK5/VoBv9nhGkXSSs/nbq1\n4hhVmzVqkDD57Bvsy2ghvCnsMLB04rKqsBTRTDCkqQKBgQDu1/onfZQ1km5x2H0Y\nCXHH165RCxSSF7AwDt/Sj4Q3gh+jznWcbpQMHwTK4FfGrsFTSTWVEruH9vFg9y9R\n/mjV6tMmMiEWcmMiWgNN6+VVf0S9DBdNs9A6IYhNgrQUSLeznzzamCcF7JdUZCsQ\nrAII+WKjQXvvp79dO0dznxwK3QKBgQDTLd/hZLamOuOST8aK7EfKZ0xAe8o9eSZO\nvSJAbAHaYr4qptXls/4yGi8GcqkJM+0vl+F2KUSUmbx1eguCXVwWe8tz3gLx0YLE\n3t2+mZyMJqS7vguwSzCcssboRsW3zgm1HyR/P8U6VGWiQfRH4tOV9k3HDUAJjLHP\nf0xZqbNGQwKBgFHw3u21c6d9eU6tix04AEUjhbZgKsqEPfn+4GMIwb+ZcOlt54On\nnDscWTSRCwwq4ECGmU9vgc7/tYgixaVHtwfM7GvqPtfInqImZ4PQLnnKk/aXs1cB\nHasT3gNZmBZtbDi/pM0J7jlmFfTp+KxblsclZ+XCjZaG4mxF7hmIuMIxAoGBAIqy\nb38WaYul079Nm+W0J7Z8v6z+YKadQhamy68qANGQ1rsmlgdmfwYjAk2m0vRTYW1H\nwHGdywgaLJevj42QiaHOrqIr5x0xcESi51p+gz3dR4Zy3DRuPcA8/ryhdswwi1mk\n2ZClroCP26yEys7H4BV3DkA0qKFdAY95WQjulusHAoGBANzdZBdhxrskgnPhnCxx\nDEjl4TWFP8bBmKQ8yeBisH8IMLgfCA0rlioAQsQwdQI1kkZ+06JJxsVgfkXQfqcJ\n/EJSfE13bBjj2VtAVf73JfGv8OEKS+nNCHDMWEJcDqxhXnDB8hCQQ3cDo6pnz9Yf\nSWE8Cm7eJNXt85pNBYynXO4U\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-hgxkm@softwareskillhackathon.iam.gserviceaccount.com",
+  "client_id": "108153954850027996065",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-hgxkm%40softwareskillhackathon.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
